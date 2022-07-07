@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_default_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Default Style Button"
+            android:theme="@style/ThemeOverlay.UseDefaultProgressButtonStyle"
+            app:layout_constraintBottom_toTopOf="@+id/progress_button_view_default_theme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_default_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Default Theme Button"
+            app:layout_constraintBottom_toTopOf="@+id/progress_button_view_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_button_view_default_style"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_primary"
+            style="@style/Widget.App.ProgressButtonView.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Primary Button"
+            app:layout_constraintBottom_toTopOf="@+id/progress_button_view_primary_variant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_button_view_default_theme"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_primary_variant"
+            style="@style/Widget.App.ProgressButtonView.PrimaryVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Primary Variant Button"
+            app:layout_constraintBottom_toTopOf="@+id/progress_button_view_outlined"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_button_view_primary"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_outlined"
+            style="@style/Widget.App.ProgressButtonView.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Outlined Button"
+            app:layout_constraintBottom_toTopOf="@+id/progress_button_view_outlined_variant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_button_view_primary_variant"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.github.vvinogra.progressbutton.view.ProgressButtonView
+            android:id="@+id/progress_button_view_outlined_variant"
+            style="@style/Widget.App.ProgressButtonView.OutlinedVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Outlined Button Variant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_button_view_outlined"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

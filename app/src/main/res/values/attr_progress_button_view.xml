@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="progressButtonViewDefaultStyle" format="reference" />
+    <attr name="progressButtonViewProgressBarStyle" format="reference" />
+    <attr name="progressButtonViewButtonStyle" format="reference" />
+
+    <declare-styleable name="ProgressButtonView">
+        <attr name="android:text" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+</resources>
